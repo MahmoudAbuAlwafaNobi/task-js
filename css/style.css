@@ -1,0 +1,70 @@
+body {
+    font-family: sans-serif;
+}
+.cars-h2 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 40px;
+    text-shadow: 6px 6px 6px rgb(214, 181, 181);
+}
+.container {
+    width: 85%;
+    margin: auto;
+}
+.cars-items {
+ display: grid;
+ grid-template-columns: repeat(3,32%);
+ height: 150px;
+ grid-gap: 2%;
+ margin-bottom: 110px;
+}
+.cars-item , .cars-img , .cars-img img {
+    width: 100%;
+    height: 100%;
+}
+.cars-img {
+ position: relative;
+}
+.cars-name {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    transform:scalex(0);
+    transition: transform 0.2s;
+}
+
+.cars-item:hover .cars-name {
+    transform: scalex(1);
+}
+.cars-name h3,
+#content,
+#content-price {
+    text-shadow: 15px 15px 25px white,
+                -15px -15px 25px white;
+ font-size: 22px;
+ font-weight: bold;
+ cursor: pointer;
+}
+input {
+    background-color: rgb(54, 51, 238);
+    color: #fff;
+    border-radius: 7px;
+    border: 0;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0px auto 20px;
+    padding: 5px 8px;
+    display:none;
+    height: 30px;
+}
+input:hover {
+    opacity: .8;
+}
+#content,
+.content2 {
+    width: 365px;
+    height: 300px;
+    background-color: rgb(212, 195, 195);
+    text-align: center;
+    padding-top: 40px;
+}
